@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="index.css">
+    <title>Dashboard</title>
+</head>
+<body class="grid-container">
+     <header>
+        <span class="material-symbols-outlined" id="menuBtn" > menu_open</span>
+        <div class="search-box">
+            <input type="text" placeholder="Search here">
+            <span class="material-symbols-outlined">search</span>
+        </div>
+        <div class="user-icons">
+            <span class="material-symbols-outlined">notifications</span>
+            <span class="material-symbols-outlined">mail</span>
+            <span class="material-symbols-outlined">account_circle</span>
+            <h4>John Wick</h4>
+        </div>
+     </header>
+     <aside>
+        <div class="logo-box">
+            <span class="material-symbols-outlined asideBtn">shopping_cart</span>
+            <span class="hide-span active">Store</span>
+        </div>
+        <div class="menu-box">
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item" id="dashboardBtn">
+                    <span class="material-symbols-outlined asideBtn">dashboard</span>
+                    <span class="hide-span active">Dashboard</span>
+                </li>
+                <li class="sidebar-list-item" id="productBtn">
+                    <span class="material-symbols-outlined asideBtn">inventory_2</span>
+                    <span class="hide-span active">Products</span>
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined asideBtn">category</span>
+                    <span class="hide-span active">Categories</span>
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined asideBtn"> groups</span>
+                    <span class="hide-span active">Customers</span>
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined asideBtn">fact_check</span>
+                    <span class="hide-span active">Inventory</span>
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined asideBtn">ballot</span>
+                    <span class="hide-span active">Reports</span>
+                </li>
+                <li class="sidebar-list-item">
+                    <span class="material-symbols-outlined asideBtn">settings</span>
+                    <span class="hide-span active">Settings</span>
+                </li>
+                <li class="sidebar-list-item" id="mode-changer">
+                    <span class="material-symbols-outlined asideBtn" id="modeIcon">light_mode</span>
+                    <span class="mode-txt hide-span active" id="modeTxt">Light</span>
+                </li>
+            </ul>
+        </div>
+     </aside>
+     <main>
+        <p class="title">Dashboard</p>
+        <div class="main-cards">
+    
+            <div class="card">
+                <div class="card-inner">
+                    <h3>PRODUCTS</h3>
+                    <span class="material-symbols-outlined">inventory_2</span>
+                </div>
+                <h1>249</h1>
+            </div>
+
+            <div class="card">
+                <div class="card-inner">
+                    <h3>CATEGORIES</h3>
+                    <span class="material-symbols-outlined">category</span>
+                </div>
+                <h1>25</h1>
+            </div>
+            
+            <div class="card">
+                <div class="card-inner">
+                    <h3>CUSTOMERS</h3>
+                    <span class="material-symbols-outlined">groups</span>
+                </div>
+                <h1>1500</h1>
+            </div>
+            
+            <div class="card">
+                <div class="card-inner">
+                    <h3>ALERTS</h3>
+                    <span class="material-symbols-outlined">notification_important</span>
+                </div>
+                <h1>56</h1>
+            </div>
+           
+        </div>
+         
+        <div class="charts">
+            <div class="chart-card">
+                <h2 class="chart-title">Top 5 Products</h2>
+                <div id="bar-chart">
+                    <canvas id="myBarChart"></canvas>
+                </div>
+            </div>
+        
+            <div class="chart-card">
+                <h2 class="chart-title">Purchase and Sales Order</h2>
+                <div id="area-chart"></div>
+            </div>
+        </div>
+
+
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>User ID</th>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>001</td>
+                        <td>John Doe</td>
+                        <td>john@example.com</td>
+                        <td>Admin</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>002</td>
+                        <td>Jane Smith</td>
+                        <td>jane@example.com</td>
+                        <td>Editor</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>003</td>
+                        <td>Michael Johnson</td>
+                        <td>michael@example.com</td>
+                        <td>User</td>
+                        <td>Active</td>
+                    </tr>
+                    <tr>
+                        <td>004</td>
+                        <td>Emily Brown</td>
+                        <td>emily@example.com</td>
+                        <td>User</td>
+                        <td>Inactive</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        
+     </main>
+     <footer>
+
+     </footer>
+
+     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+     <script src="main.js"></script>
+</body>
+</html>
